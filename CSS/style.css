@@ -64,9 +64,8 @@
     width: 100%;
     color: white;
     position: absolute;
-    top: 25%;
-    bottom: 50%;
-
+    top: 15%;
+    bottom: 75%;
     text-align: center;
 }
 .text-box h1{
@@ -78,10 +77,74 @@
     color: white;
 }
 
+/* Login Section */
+#login-error-msg-holder {
+    width: 100%;
+    height: 100%;
+    display: block;
+    justify-items: center;
+    align-items: center;
+}
+
+#login-error-msg {
+    width: 23%;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8a0000;
+    border: 1px solid #8a0000;
+    background-color: #e58f8f;
+    opacity: 0;
+}
+
+#error-msg-second-line {
+    display: block;
+}
+
+#login-form {
+    align-self: flex-start;
+    display: block;
+    justify-items: auto;
+    align-items: center;
+}
+
+.login-form-field::placeholder {
+    color: #3a3a3a;
+}
+
+.login-form-field {
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    margin-left: 44%;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    align-items: center;
+    justify-items: auto;
+    font-size: 16px;
+
+}
+
+#login-form-submit {
+    width: 13%;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: blue;
+    cursor: pointer;
+    outline: none;
+}
+
 .picture-attribution{
 
     font-size: 16px;
-    padding-top: 630px;
+    padding-top: 600px;
     position: center;
     text-align: center;
     color: grey;

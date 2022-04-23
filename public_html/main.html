@@ -6,6 +6,7 @@
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <meta name="description" content="This is an example of a meta description, This will often how up in the search results">
     <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../login.js"></script>
 </head>
 <body>
 <section class ="header">
@@ -15,17 +16,18 @@
     <div class="text-box">
         <h1>Welcome to The Mini-Games Portal</h1>
         <p>Login Below to Play Some Educational Mini-Games</p>
-        <form>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname">
+        <div id="login-error-msg-holder">
+            <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+        </div>
+        <form id="login-form">
+            <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+            <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+            <input type="submit" value="Login" id="login-form-submit">
         </form>
         <p>
             <a href="landing.html" class="Register" style="font-size: smaller">Forgot Password</a>
         <h2></h2>
         <a href="landing.html" class="Register">Register New User</a>
-        </p>
         <p>
             <a href="landing.html" class="start-btn">Login</a>
         </p>
