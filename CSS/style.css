@@ -1,0 +1,399 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/super-mario-bros-world-671.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+/*----Header Styles---*/
+.header-text li a{
+    color: white;
+    font-size: 30px;
+    padding: 2% 2%;
+    font-weight: bold;
+    text-decoration: none;
+}
+.nav{
+    display: flex;
+    padding: 2%, 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-text img{
+    display: inline;
+    padding: 0;
+    height: 100px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    padding-bottom: none;
+}
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: coral;
+    display: block;
+    margin: auto;
+    transition: 1s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 25%;
+    bottom: 50%;
+
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: white;
+}
+
+.picture-attribution{
+
+    font-size: 16px;
+    padding-top: 630px;
+    position: center;
+    text-align: center;
+    color: grey;
+    padding-bottom: 10px;
+}
+.picture-attribution-Fifth{
+    font-size: 16px;
+    padding-top: 70px;
+    margin-left: 5px;
+    position: absolute;
+    text-align: center;
+    color: grey;
+}
+@media(max-width: 700px){
+    .picture-attribution-Fifth{
+        padding-top: 60px;
+    }
+}
+.start-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 35px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.start-btn:hover{
+    border: 1px solid coral;
+    background: coral;
+    transition: .5s;
+}
+na.fa{
+    display: none;
+}
+@media(max-width: 700px)  {
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: coral;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        transition: 1s;
+    }
+    nav.fa{
+        display: block;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/*----Second Section Styles---*/
+.belowheader{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+h1{
+    font-size: 36px;
+    font-weight: bold;
+}
+p{
+    color: black;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.secondsection-col{
+    flex-basis: 30%;
+    background: lemonchiffon;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.secondsection-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 700px) {
+    .row{
+        flex-direction: column;
+    }
+
+}
+/*----Third Section Styles---*/
+.thirdsection{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.thirdsection-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.thirdsection-col img{
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom:50%;
+    opacity: 1;
+}
+/*-------fourthsection------*/
+.fourthsection{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+.fourthsection p{
+    font-size: 20px;
+}
+.fourthsection-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    overflow: hidden;
+}
+.fourthsection-col img{
+    width: 90%;
+    height: 450px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.fourthsection-col h5{
+    color: grey;
+    padding-bottom: 10px;
+}
+.fourthsection-col p{
+    padding: 0;
+}
+.fourthsection-col h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+/*-------fifthsection------*/
+.fifthsection{
+    width: 80%;
+    margin: 100px auto;
+    text-align: center;
+    padding: 100px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/pexels-pixabay-270348.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+.fifthsection h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+
+}
+@media(max-width: 700px) {
+    .fifthsection h1{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 700px) {
+    .picture-attribution-Fifth h4 {
+        font-size: 10px;
+    }
+}
+
+/*-------footersection------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+.footer h4{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.footer h5{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 10px;
+
+}
+.footer a{
+    padding-right: 15px;
+}
+/*-------sixthsection------*/
+.sixthsection{
+    width: 100%;
+    margin: 100px auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/pexels-christina-morillo-1181271.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    color: white;
+}
+.sixthsection:before{
+    margin-top: 100px;
+}
+
+.sixthsection img{
+    object-fit: contain;
+
+}
+.sixthsection h1{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+.sixthsection-col{
+    flex-basis: 30%;
+    margin-left: 10%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.infoList{
+    list-style-type: none;
+    padding-left: 1000px;
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 20px;
+}
+
+.sixthsection h4{
+    color: coral;
+    padding-bottom: 5px;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 20px;
+}
+.sixthsection li {
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.infoList:before{
+    content: '';
+    background: coral;
+    display: inline;
+    position: absolute;
+    left: 130px;
+    width: 2px;
+    height: 100%;
+    z-index: 1;
+    padding-left: 100px;
+}
