@@ -7,6 +7,7 @@
     <meta name="description" content="This is an example of a meta description, This will often how up in the search results">
     <link rel="stylesheet" href="../CSS/style.css">
     <script src="../login.js"></script>
+    <script src="../quiz.js"></script>
 </head>
 <body>
 <section class ="header">
@@ -15,24 +16,25 @@
     </div>
     <div class="text-box">
         <h1>Welcome to The Mini-Games Portal</h1>
-        <p>Login Below to Play Some Educational Mini-Games</p>
-        <div id="login-error-msg-holder">
-            <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
-        </div>
-        <form id="login-form">
-            <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
-            <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
-            <input type="submit" value="Login" id="login-form-submit">
-        </form>
+        <main id="main-holder">
+            <h1 id="login-header" style="font-size: large">Login Below to Play Some Educational Mini-Games</h1>
+
+            <div id="login-error-msg-holder">
+                <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+            </div>
+
+            <form id="login-form">
+                <label for="username-field"></label><input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+                <label for="password-field"></label><input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+                <input type="submit" value="Login" id="login-form-submit">
+            </form>
         <p>
             <a href="landing.html" class="Register" style="font-size: smaller">Forgot Password</a>
         <h2></h2>
-        <a href="landing.html" class="Register">Register New User</a>
-        <p>
-            <a href="landing.html" class="start-btn">Login</a>
-        </p>
+        <a href="registration.html" class="Register">Register New User</a>
 
     </div>
+
     <div class="picture-attribution">
         <p></p>
         <h4>Games, by Pixabay, licensed under CC </h4>
@@ -42,6 +44,11 @@
 <!--Footer Section-->
 <section class="footer">
     <h4>Created By, <br>Sarah Voishnis</h4>
+    <h5>
+        <a href="https://www.njit.edu/">NJIT's Home Page</a>
+        <a href="https://github.com/svoishnis/Internet-History">FAQ</a>
+        <a href="https://github.com/svoishnis/Internet-History">Terms and Conditions</a>
+    </h5>
 </section>
 </body>
 </html>
