@@ -3,21 +3,41 @@
   <title> Quiz </title>
   <link rel="stylesheet" href="../CSS/quiz.css">
   <meta charset="utf-8" />
-
+<style>
+  .start-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 35px;
+    font-size: 20px;
+    background: lightcoral;
+    position: relative;
+    cursor: pointer;
+  }
+  .start-btn:hover{
+    border: 1px solid coral;
+    background: coral;
+    transition: .5s;
+  }
+</style>
 </head>
 <body>
 <h1>POP Quiz</h1>
 <div class="quiz-container">
   <div id="quiz"></div>
 </div>
-<script src="../Javascript/quiz.js">
+<script src="../quiz.js">
 </script>
-<!--<button id="previous">Previous Question</button>
+<button id="previous">Previous Question</button>
 <button id="next">Next Question</button>
--->
+<div>
 <button id="submit">Submit Quiz</button>
+</div>
+<div>
+  <a href="landing.html"class="start-btn">Back to Game Selection</a>
+</div>
 <div id="results"></div>
-<div>Score 0 out of 4</div>
 </body>
 
 
