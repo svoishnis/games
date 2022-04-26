@@ -1,0 +1,73 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mini-Games Website: Help</title>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <meta name="description" content="This is an example of a meta description, This will often how up in the search results">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <style>
+    .help-form-field {
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    margin-left: 20%;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    align-items: center;
+    justify-items: center;
+    font-size: 16px;
+
+    }
+    .problem-field{
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+<section class ="header">
+  <div class="header-text">
+    <li><a href="main.html">IS-663 Mini-Games Website</a></li>
+  </div>
+  <nav>
+    <a href="main.html"></a>
+    <div class="nav-links" id="navLinks">
+      <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="landing.html">GAME SELECTION</a></li>
+        <li><a href="account.html">ACCOUNT</a></li>
+        <li><a href="scores.html">SCORES</a></li>
+        <li><a href="help.html">HELP</a></li>
+        <li><a href="main.html">LOGOUT</a></li>
+      </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+  </nav>
+  <div class="text-box">
+    <h1>Help</h1>
+    <main id="main-holder">
+      <h1 id="login-header" style="font-size: large">Fill out the Support Form Below</h1>
+      <form id="login-form">
+        <label for="title-field"></label><input type="text" name="title" id="title-field" class="help-form-field" placeholder="Title">
+        <label for="username-field"></label>
+        <input for=type="text" name="problem" id="problem-field" class="help-form-field" placeholder="Description/ Problem" style="width: 900px">
+      </form>
+      <a href="landing.html"class="start-btn">Send Help Request</a>
+  </div>
+</section>
+
+<!--Footer Section-->
+<section class="footer">
+  <h4>Created By, <br>Sarah Voishnis</h4>
+  <h5>
+    <a href="https://www.njit.edu/">NJIT's Home Page</a>
+    <a href="faq.html">FAQ</a>
+    <a href="terms.html">Terms and Conditions</a>
+  </h5>
+</section>
+
+</body>
+</html>
